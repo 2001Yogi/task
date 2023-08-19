@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM USING CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 800px;
+            height: 550px;
+            background: linear-gradient(to right, #355d84e8,#319659fc);
+            position: relative;
+            top: 60px;
+            left: 22%;
+        }
+        h2{
+            color: white;
+            position: absolute;
+            top: 15px;
+            left: 210px;
+        }
+        .child{
+            width: 500px;
+            height: 450px;
+            background: linear-gradient(to right,#02022a6e, #133f13d6);
+            position: absolute;
+            top: 55px;
+            left: 145px;
+            border-radius: 8px;
+        }
+        h3{
+            color: white;
+            position: absolute;
+            top: 24px;
+            left: 210px;
+        }
+        h4{
+            color: white;
+            position: absolute;
+            top: 60px;
+            left: 100px;
+            opacity: 0.5;
+        }
+        .content{
+            position: absolute;
+            top: 110px;
+        }
+        .content_1{
+            position: absolute;
+            top: 190px;
+        }
+        .set{
+            color: white;
+            padding: 6px;
+            margin-left: 20px;
+        }
+        .int{
+            width: 430px;
+            height: 38px;
+            margin-top: 10px;
+            margin-left: 28px;
+            border-radius: 4px;
+            box-shadow: 1px 1px 0 white;
+        }
+        .check{
+            position: absolute;
+            top: 270px;
+            left: 30px;
+        }
+        .f_pass{
+            text-decoration: none;
+            color: #00bdff;
+            position: absolute;
+            top: 270px;
+            left: 350px;
+        }
+        button{
+            background-color: black;
+            opacity: 0.9;
+            position: absolute;
+            top: 300px;
+            left: 30px;
+            color: white;
+            width: 428px;
+            height: 40px;
+            border-radius: 4px;
+        }
+        .heading{
+            color: white !important;
+            position: absolute;
+            top: 371px;
+            left: 158px;
+            font-size: 15px;
+        }
+        .register{
+            position: absolute;
+            top: 370px;
+            left: 263px;
+            font-size: 17px;
+            text-decoration: none;
+            color: #00bdff;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>Login form using HTML and CSS</h2>
+        <div class="child">
+            <form action="">
+                <h3>Sign in</h3>
+                <h4>Sign in with your username and password</h4>
+                <div class="content">
+                    <label for="" class="set">Your username</label><br>
+                    <input type="text" name="name" id="name" class="int" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter Username">
+                </div>
+                <div class="content_1">
+                    <label for="" class="set">Your password</label><br>
+                    <input type="text" name="name" id="name" class="int" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter Password">
+                </div>
+                <div class="check">
+                    <input type="checkbox" checked><label for="" style="color: white;">&nbsp;&nbsp;Remember me</label>
+                </div>
+                <a href="" class="f_pass">Forgot Password?</a>
+                <button type="submit">Login</button>
+                <h5 class="heading">Not a Member?</h5>
+                <a href="" class="register">Register here!</a>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

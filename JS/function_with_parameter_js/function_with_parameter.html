@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="one"></p>
+    <p id="two"></p>
+    <button onclick="a('Yogita','Gidwani')">Click</button> 
+    <!-- calling function in button using id -->
+    <script>
+        function a(fname,lname) {
+            // console.log("your Fname is,fname");
+            document.getElementById("one").innerHTML = "your Fname is " + fname //+ sign is used for concatination
+            // console.log("your Lname is,lname"); // in console used , sign for printing the name
+             document.getElementById("two").innerHTML = "your Lanme is " + lname
+        }
+        // a("Yogita","Gidwani"); only calling the function
+    </script>
+</body>
+</html>

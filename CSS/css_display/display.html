@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        body *{
+            border: 2px solid black;
+            padding: 20px;
+            display: inline-block;
+            transition: 5s;
+        }
+        li{
+            visibility: hidden;
+            /* opacity: 0; */
+            /* display: none; */
+        }
+        ul:hover li{
+            visibility: visible;
+            /* display: inline-block;
+            opacity: 1;
+            background-color: aqua; */
+        }
+    </style>
+</head>
+<body>
+    <ul>Grandfather
+        <li>Father</li>
+        <li>Son</li>
+    </ul>
+</body>
+</html>

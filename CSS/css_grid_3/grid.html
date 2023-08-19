@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            display: inline-grid;
+            grid-template-columns: repeat(3);
+        }
+        .one{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        #two_1{
+            grid-row: 1/3;
+            grid-column: 1/2;
+            background-image: url(img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #two_2{
+            grid-row: 1/4;
+            grid-column: 2/3;
+            background-image: url(img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #two_3{
+            grid-row: 1/3;
+            grid-column: 3/4;
+            background-image: url(img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #two_4{
+            grid-row: 3/5;
+            grid-column: 1/2;
+            background-image: url(img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #two_5{
+            grid-row: 4/7;
+            grid-column: 2/3;
+            background-image: url(img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #two_6{
+            grid-row: 3/5;
+            grid-column: 3/4;
+            background-image: url(img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #two_7{
+            grid-row: 5/7;
+            grid-column: 1/2;
+            background-image: url(img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #two_8{
+            grid-row: 5/7;
+            grid-column: 3/4;
+            background-image: url(img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }        
+    </style>
+</head>
+<body>
+    <div>
+        <div class="one" id="two_1"></div>
+        <div class="one" id="two_2"></div>
+        <div class="one" id="two_3"></div>
+        <div class="one" id="two_4"></div>
+        <div class="one" id="two_5"></div>
+        <div class="one" id="two_6"></div>
+        <div class="one" id="two_7"></div>
+        <div class="one" id="two_8"></div>
+    </div>
+</body>
+</html>

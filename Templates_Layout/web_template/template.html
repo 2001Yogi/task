@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(30, 28, 28);
+        }
+        .header{
+            height: 100px;
+            display: flex;
+        }
+        .logo{
+            width: 30%;
+            margin-top: 28px;
+            margin-left: 50px;
+            display: flex;
+        }
+        .img_1{
+            width: 100px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid rgb(133, 121, 121);
+        }
+        h3{
+            color: white;
+            margin-top: 23px;
+            margin-left: 12px;
+            font-size: 19px;
+        }
+        .link{
+            width: 70%;
+            margin-top: 50px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            margin-left: 42px;
+            font-size: 19px;
+        }
+        .main{
+            height: 500px;
+            display: flex;
+            margin-top: 21px;
+            margin-left: 60px;
+        }
+        .main_1{
+            width: 50%;   
+            margin-top: 130px; 
+        }
+        .p_1{
+            color: white;
+            opacity: 0.8;
+            font-size: 23px;
+        }
+        .p_2{
+            color: white;
+            padding: 12px 0;
+            font-size: 70px;
+            font-weight: bold;
+        }
+        span{
+            color: red;
+        }
+        .p_3{
+            color: white;
+            font-size: 70px;
+            font-weight: bold;
+        }
+        .p_4{
+            margin-top: 20px;
+            color: white;
+            opacity: 0.8;
+            font-size: 22px;
+        }
+        .main_2{
+            width: 50%;
+            position: relative;
+            height: inherit;
+        }
+        .main_2_1{
+            position: absolute;
+            height: 270px;
+            width: 420px;
+            top: 70%;
+            left: 45%;
+            box-shadow: 0 0 25px rgb(54, 50, 50);
+            /* z-index: -1; */
+        }
+        .img_2{
+            position: absolute;
+            top: 270px;
+            left: 245px;
+            /* margin-top: 50px;
+            margin-left: 50px; */
+            width: 560px;
+            height: 350px;
+            background: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="img.jpg" alt="image" class="img_1">
+            <h3>INBIO</h3>
+        </div>
+        <div class="link">
+            <a href="">HOME</a>
+            <a href="">FEATURES</a>
+            <a href="">PORTFOLIO</a>
+            <a href="">RESUME</a>
+            <a href="">CLIENTS</a>
+            <a href="">PRICING</a>
+            <a href="">BLOG</a>
+            <a href="">CONTACT</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_1">
+            <p class="p_1">WELCOME TO MY WORLD</p>
+            <p class="p_2">Hi, I'm <span>Jone Lee</span></p>
+            <p class="p_3">a Developer.</p>
+            <p class="p_4">I use animation as a third dimension by which to simplify experiences and <br>kuiding thro each and every interaction. I'm not adding motion just to spruce<br> things up, but doing it in ways that. </p>
+        </div>
+        <div class="main_2">
+            <div class="main_2_1"></div>
+            <img src="img.png" alt="" class="img_2">
+        </div>
+    </div>
+</body>
+</html>

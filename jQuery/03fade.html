@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            margin-top: 10px;
+            display: none; /* For fadeIn dispaly none is compulsary because it is for showing  ......For fadeOut display none is remove because it is for hiding the element .... for fadeToggle dispaly none is there then 1st click show and 2nd click hide*/
+        }
+    </style>
+
+</head>
+<body>
+    <div id="one1">1</div>
+    <div id="one2">2</div>
+    <div id="one3">3</div>
+    <button>Click to Fade</button>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function (){
+                // $("#one1").fadeIn(), $("#one2").fadeIn("slow"), $("#one3").fadeIn(3000)
+                // $("#one1").fadeOut(), $("#one2").fadeOut("slow"), $("#one3").fadeOut(3000)
+                // $("#one1").fadeToggle(), $("#one2").fadeToggle("slow"), $("#one3").fadeToggle(3000)
+                $("#one1").fadeTo("fast",.7),$("#one2").fadeTo("slow",.3),$("#one3").fadeTo(4000,.5)
+            })
+        })
+    </script>
+</body>
+</html>

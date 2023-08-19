@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+        }
+        h3{
+            color: white;
+            margin-top: 25px;
+            margin-left: 560px;
+        }
+        div{
+            height: 10px;
+            width: 25px;
+            background-color: rgb(239, 206, 39);
+            margin-top: 22px;
+            margin-left: 560px;
+            position: relative;
+            animation-name: one;
+            animation-duration: 7s;
+        }
+        #one_1{
+            animation-timing-function: linear;
+        }
+        #one_2{
+            animation-timing-function: ease;
+        }
+        #one_3{
+            animation-timing-function: ease-in;
+        }
+        #one_4{
+            animation-timing-function: ease-out;
+        }
+        #one_5{
+            animation-timing-function: ease-in-out;
+        }
+        #one_6{
+            animation-timing-function: steps(8);
+        }
+        @keyframes one{
+            from{
+                left: 0;
+            }
+            to{
+                width:30%
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3>C/C++</h3>
+    <div id="one_1"></div>
+    <h3>Java</h3>
+    <div id="one_2"></div>
+    <h3>Python</h3>
+    <div id="one_3"></div>
+    <h3>HTML</h3>
+    <div id="one_4"></div>
+    <h3>CSS</h3>
+    <div id="one_5"></div>
+    <h3>Javascript</h3>
+    <div id="one_6"></div>
+</body>
+</html>

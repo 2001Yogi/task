@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="demo"></h3>
+    <h4 id="demo_1"></h4>
+    <script>
+        counts = setInterval(test);
+        upto = 500;
+
+        function test(){
+            var count = document.getElementById("demo").innerHTML = --upto;
+            if(upto == 0){
+                clearInterval(counts);
+            }
+        }
+
+        counts_1 = setInterval(test_1);
+        upto_1 = 0;
+
+        function test_1(){
+            var count_1 = document.getElementById("demo_1").innerHTML = ++upto_1;
+            if(upto_1 == 500){
+                clearInterval(counts_1);
+            }
+        }
+    </script>
+</body>
+</html>

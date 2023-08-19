@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+        }
+        .one{
+            border: 2px solid black;
+            padding: 30px;
+        }
+        #two_1{
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        #two_2{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        #two_6{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 4;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="one" id="two_1">1</div>
+        <div class="one" id="two_2">2</div>
+        <div class="one" id="two_3">3</div>
+        <div class="one" id="two_4">4</div>
+        <div class="one" id="two_5">5</div>
+        <div class="one" id="two_6">6</div>
+        <div class="one" id="two_7">7</div>
+        <div class="one" id="two_8">8</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Using Grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+        .main{
+            display: flex;
+            height: 60px;
+        }
+        .logo{
+            height: inherit;
+            width: 18%;
+            position: relative;
+            background-color: rgb(77, 77, 241);
+            color: white;
+        }
+        .fa-house{
+            position: absolute;
+            color: white;
+            top: 15px;
+            left: 45px;
+            font-size: 20px;
+        }
+        h6{
+            font-size: 22px;
+        }
+        .h_1{
+            position: absolute;
+            top: 14px;
+            left: 75px;
+        }
+        .main_1{
+            height: inherit;
+            width: 82%;
+            position: relative;
+        }
+        .img_1{
+            position: absolute;
+            border-radius: 50%;
+            height: 28px;
+            width: 28px;
+            top: 10px;
+            left: 30px;
+        }
+        .fa-facebook{
+            color: rgb(55, 102, 232);
+            position: absolute;
+            top: 15px;
+            left: 70px;
+            font-size: 20px;
+        }
+        .fa-twitter{
+            color: rgb(55, 102, 232);
+            position: absolute;
+            top: 15px;
+            left: 100px;
+            font-size: 20px;
+        }
+        .fa-instagram{
+            color: rgb(55, 102, 232);
+            position: absolute;
+            top: 15px;
+            left: 130px;
+            font-size: 20px;
+        }
+        .fa-google-drive{
+            color: rgb(55, 102, 232);
+            position: absolute;
+            top: 15px;
+            left: 160px;
+            font-size: 20px;
+        }
+        /* .fa-envelope{
+            position: absolute;
+            top: 3px;
+            left: 2px;
+        }   */
+        input{
+            position: absolute;
+            top: 12px;
+            left: 950px;
+            padding: 5px;
+            background-color: rgb(229, 237, 244);
+            color: rgb(91, 91, 238) !important;
+            border: none;
+            box-shadow: 0 0 5px rgb(219, 193, 145);
+        }  
+        button{
+            position: absolute;
+            top: 11px;
+            left: 1140px;
+            padding: 5px;
+            color: rgb(115, 115, 228);
+            border: 2px solid rgb(95, 95, 219);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(76, 76, 232);
+            font-weight: bolder;
+        } 
+        .section{
+            display: flex;
+        }
+        .section_1{
+            width: 18%;
+            display: grid;
+            grid-template-columns: repeat(2);
+            gap: 20px;
+        }
+        .one{
+            padding: 15px;
+            background-color: rgb(245, 249, 251);
+            margin: 10px;    
+        }
+        #two_1{
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+        #two_2{
+            grid-row: 1/2;
+            grid-column: 2/3;
+        }
+        #two_3{
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+        #two_4{
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+        #two_15{
+            grid-row: 8/9;
+            grid-column: 1/3;
+        }
+        .section_2{
+            width: 82%;
+            display: grid;
+            grid-template-columns: repeat(12);
+            gap: 20px;
+        }
+        .three{
+            padding: 15px;
+            background: linear-gradient(to right, rgb(6, 6, 85), white);
+        }
+        #four_1{
+            grid-column: 1/3;
+            background-image: url(1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #four_2{
+            grid-column: 3/6;
+            background-image: url(2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #four_3{
+            grid-column: 6/9;
+            background-image: url(3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #four_4{
+            grid-column: 9/13;
+            background-image: url(4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #four_5{
+            grid-column: 1/4;
+            background-image: url(5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;    
+        }
+        #four_6{
+            grid-column: 4/8;
+            background-image: url(6.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;  
+        }
+        #four_7{
+            grid-column: 8/13;
+            background-image: url(7.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #four_8{
+            grid-column: 1/6;
+            background-image: url(8.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #four_9{
+            grid-column: 6/13;
+            background-image: url(9.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #four_10{
+            grid-column: 1/4;  
+            background-image: url(10.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;  
+        }
+        #four_11{
+            grid-column: 4/8;
+            background-image: url(11.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;  
+        }
+        #four_12{
+            grid-column: 8/13;
+            background-image: url(12.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #four_13{
+            grid-column: 1/3;
+            background-image: url(13.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #four_14{
+            grid-column: 3/6;
+            background-image: url(14.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;    
+        }
+        #four_15{
+            grid-column: 6/9;
+            background-image: url(15.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #four_16{
+            grid-column: 9/13;
+            background-image: url(16.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+            <i class="fa-solid fa-house"></i>
+            <h6 class="h_1">GridWorks</h6>
+        </div>
+        <div class="main_1">
+            <img src="img.jpg" alt="" class="img_1">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-google-drive"></i>
+                <!-- <i class="fa-solid fa-envelope"></i> -->
+            <input type="email" value="Email Address">
+            <button>Stay Updated</button>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section_1">
+            <div class="one" id="two_1"><center><i class="fa-solid fa-image"></i><br>Image</center></div>
+            <div class="one" id="two_2"><center><i class="fa-solid fa-magnifying-glass"></i><br>Glass</center></div>
+            <div class="one" id="two_3"><center><i class="fa-solid fa-star"></i><br>Star</center></div>
+            <div class="one" id="two_4"><center><i class="fa-solid fa-phone"></i><br>Phone</center></div>
+            <div class="one" id="two_5"><center><i class="fa-solid fa-cloud"></i><br>Cloud</center></div>
+            <div class="one" id="two_6"><center><i class="fa-solid fa-camera-retro"></i><br>Camera</center></div>
+            <div class="one" id="two_7"><center><i class="fa-solid fa-calendar-days"></i><br>Calendar</center></div>
+            <div class="one" id="two_8"><center><i class="fa-solid fa-bell"></i><br>Bell</center></div>
+            <div class="one" id="two_9"><center><i class="fa-solid fa-face-smile"></i><br>Smile</center></div>
+            <div class="one" id="two_10"><center><i class="fa-solid fa-gift"></i><br>Gift</center></div>
+            <div class="one" id="two_11"><center><i class="fa-brands fa-apple"></i><br>Apple</center></div>
+            <div class="one" id="two_12"><center><i class="fa-solid fa-lock"></i><br>Lock</center></div>
+            <div class="one" id="two_13"><center><i class="fa-solid fa-droplet"></i><br>Droplet</center></div>
+            <div class="one" id="two_14"><center><i class="fa-solid fa-hand"></i><br>Hand</center></i></div>
+            <div class="one" id="two_15">Made with ThemeWagon Temp</div>
+        </div>
+        <div class="section_2">
+            <div class="three" id="four_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, qui veritatis? Earum!</div>
+            <div class="three" id="four_2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde facere dolor minus?</div>
+            <div class="three" id="four_3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil asperiores explicabo repellendus?</div>
+            <div class="three" id="four_4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vel dolorem laboriosam?</div>
+            <div class="three" id="four_5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptates sunt ut?</div>
+            <div class="three" id="four_6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos dolore facilis impedit!</div>
+            <div class="three" id="four_7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa aliquam error!</div>
+            <div class="three" id="four_8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia facilis ex?</div>
+            <div class="three" id="four_9">Lorem ipsum dolor sit amet consectetur adipisicing elit. A veniam sint corrupti.</div>
+            <div class="three" id="four_10">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, corporis? Animi, laborum?</div>
+            <div class="three" id="four_11">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perspiciatis explicabo neque!</div>
+            <div class="three" id="four_12">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo perferendis nulla itaque.</div>
+            <div class="three" id="four_13">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur saepe eveniet minus!</div>
+            <div class="three" id="four_14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quas porro. Dolor?</div>
+            <div class="three" id="four_15">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium cupiditate dolore est!</div>
+            <div class="three" id="four_16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sequi explicabo et.</div>
+        </div>
+    </div>
+</body>
+</html>

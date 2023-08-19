@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            height: 80px;
+            display: flex;
+            background-color: rgb(246, 34, 69);
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        .logo{
+            color: white;
+            width: 40%;
+            height: inherit;
+            margin-left: 170px;
+            margin-top: 24px;
+            font-size: 19px;
+            letter-spacing: 4px;
+        }
+        .fa-music{
+            color: white;
+            font-size: larger;
+        }
+        .links{  
+            height: inherit;
+            width: 60%; 
+            margin-top: 26px;
+            
+            font-size: 18px;       
+        }
+        a{
+            text-decoration: none;
+            margin-left: 55px;
+            color: white;
+        }
+        .fa-cart-shopping{
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        .main{
+            height: 500px;
+            overflow-x: hidden;
+        }
+        .main_1{
+            height: 420px;
+            width: 1550px;
+            position: relative;
+        }
+        .main_1 video{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
+            z-index: 0;
+        }
+        .main_1 .main_2{
+            z-index: 1;
+            position: relative;
+            color: white;
+            padding: 20px;
+            top: 25%;
+            left: 7%;
+        }
+        h2{
+            font-size: 40px;
+            padding: 5px !important;
+        }
+        h6{
+            font-size: large;
+            padding: 5px;
+        }
+        button{
+            font-size: 22px;
+            margin-top: 13px;
+            margin-left: 5px;
+            padding: 5px;
+            background: none;
+            color: white;
+            box-shadow: 0 0 3px white;
+            border-radius: 6px;
+        }
+        .section{
+            height: 90px;
+            display: flex;
+            margin-left: 125px ;
+            overflow-x: hidden;
+        }
+        .section_1{
+            height: inherit;
+            width: 50%;
+        }
+        p{
+            font-size: large;
+            margin-left: 6px;
+        }
+        h6{
+            font-size: 18px;
+            margin-top: 5px;
+            margin-right: 60px;
+        }
+        .content{
+            height: 300px;
+            display: flex;  
+            overflow-x: hidden;
+        }
+        .content_1{
+            height: 250px;
+            width: 20%;
+            margin-top: 50px;
+            margin-left: 150px;
+            background-color: rgb(47, 42, 42);
+        }
+        .content_2{
+            height: 250px;
+            width: 20%;
+            margin-top: 50px;
+            margin-left: 150px;
+            background-color: rgb(47, 42, 42);
+        }
+        .content_3{
+            height: 250px;
+            width: 20%;
+            margin-top: 50px;
+            margin-left: 150px;
+            background-color: rgb(47, 42, 42);
+        }
+        h4{
+            color: white;
+            font-size: xx-large;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        h5{
+            color: white;
+            font-size: 25px;
+            margin-top: 34px;
+            margin-left: 40px;
+        }
+        .sub_content{
+            height: 100px;
+            display: flex;
+            overflow-x: hidden;
+        }
+        .sub_content_1{
+            height: inherit;
+        }
+        .sub_content_2{
+            height: inherit;
+        }
+        .sub_content_3{
+            height: inherit;
+        }
+        .h_1{
+            font-size: 18px !important;
+            margin-top: 25px ;
+            margin-left: 155px;
+        }
+        .h_2{
+            font-size: 18px !important;
+            margin-top: 25px ;
+            margin-left: 180px;
+        }
+        .h_3{
+            font-size: 18px !important;
+            margin-top: 25px;
+            margin-left: 170px;
+        }
+        .img_content{
+            height: 420px;
+            width: 1519px;
+            position: relative;
+            overflow-x: hidden;
+        }
+        .img_1 img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
+            z-index: 0;
+        }
+        .img_section{
+            z-index: 1;
+            position: relative;
+            color: white;
+            padding: 20px;
+            top: 25%;
+            right: 0;
+            left: 9%;
+        }
+        h2 .h2_1{
+            font-size: 40px;
+            padding: 5px !important;
+        }
+        h6 .h6_1{
+            font-size: large;
+            padding: 5px;
+        } 
+        .b_2{
+            z-index: 1;
+            position: relative;
+            color: white;
+            padding: 10px;
+            top: 18%;
+            right: 0;
+            left: 11%;
+            box-shadow: 0 0 10px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <i class="fa-solid fa-music"></i>&nbsp;&nbsp;ACME
+        </div>
+        <div class="links">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Shop</a>
+            <a href="">Donate</a>
+            <a href="">Contact</a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></i></i></i></i></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_1">
+            <video autoplay muted loop >
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div class="main_2">
+                <h2>Serving you <br>since 1989.</h2>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Vel cumque modi itaque, porro illum quis dolorem.<br> Accusamus placeat rem iste sapiente, ab rerum,</h6>
+                <button>Shop Now</button>
+            </div>
+        </div>   
+    </div>
+    <div class="section">
+        <div class="section_1">
+            <p>WAYS TO SUPPORT</p>
+            <h2>Support Acme Outdoors.</h2>
+        </div>
+        <div class="section_2">
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod nihil,<br> suscipit nesciunt ad est quis architecto quia amet. Provident, maiores nostrum <br>quasi nesciunt fugiat excepturi sint! Reiciendis, sint quos?</h6>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content_1">
+            <h4>01</h4>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SHOP<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRODUCTS</h5>
+        </div>
+        <div class="content_2">
+            <h4>02</h4>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DONATE</h5>
+        </div>
+        <div class="content_3">
+            <h4>03</h4>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUY<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GIFT CARDS</h5>
+        </div>
+    </div>
+    <div class="sub_content">
+        <div class="sub_content_1">
+            <h1 class="h_1">Lorem ipsum dolor sit amet ab fndn <br>porro vero ipsam voluptatem sdhb<br> totam,alias commodi  minusn bfdh</h1>
+        </div>
+        <div class="sub_content_2">
+            <h1 class="h_2">Lorem ipsum dolor sit amet dbj bdjs<br>porro vero ipsam voluptatem  dnjb<br> totam,alias commodi  minusn  dncxjhsz </h1>
+        </div>
+        <div class="sub_content_3">
+            <h1 class="h_3">Lorem ipsum dolor sit amet  dfjjv<br>porro vero ipsam voluptatem n dshvc  <br> totam,alias commodi  minusn nmdhs </h1>
+        </div>
+    </div>
+    <div class="img_content">
+        <div class="img_1">
+            <img src="img.jpg" alt="">
+        </div>
+        <div class="img_section">
+            <h2 class="h2_1">How we're keeping you <br>safe during COVID-19</h2>
+            <h6 class="h6_1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Voluptatibus nulla, sed, illo repellendus maxime<br> saepe voluptas molestiae</h6>
+        </div>
+        <button class="b_2">Shop Now</button>
+    </div>
+</body>
+</html>

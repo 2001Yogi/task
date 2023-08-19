@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM USING CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height: 700px;
+            background-color: black;
+            opacity: 0.8;
+        }
+        .one{
+            width: 550px;
+            height: 450px;
+            background: linear-gradient(rgb(223, 39, 39),rgb(233, 101, 101),rgb(218, 63, 127));
+            position: relative;
+            top: 125px;
+            left: 32%;
+        }
+        .two{
+            width: 400px;
+            height: 350px;
+            background-color: whitesmoke;
+            position: absolute;
+            top: 50px;
+            left: 71px;
+            border-radius: 5px;
+            /* box-shadow: 4px 4px 0 white; */
+        }
+        h2{
+            font-size: x-large;
+            font-weight: 300;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: relative;
+            top: 45px;
+            left: 30px;
+        }
+        .content{
+            position: relative;
+            top: 90px;
+            left: 30px;
+        }
+        .content_1{
+            position: relative;
+            top: 120px;
+            left: 30px;
+        }
+        input{
+            width: 320px;
+            height: 25px;
+            padding-bottom: 8px;
+            padding-top: 9px;
+            border-width: 0 0 1px 0;
+            background-color: whitesmoke;
+        }
+        a{
+            position: relative;
+            top: 170px;
+            left: 89px;
+            text-decoration: none;
+            font-weight: 100;
+            color: #000000a3;
+        }
+        .three{
+            position: absolute;
+            top: 310px;
+            right: 201px;
+            width: 200px;
+            height: 40px;
+            border: none;
+            background-color: #8080805e;
+        }
+        .four{
+            position: absolute;
+            top: 310px;
+            left: 200px;
+            width: 200px;
+            height: 40px;
+            background-color: rgb(39, 20, 85, 1);
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="one">
+            <div class="two">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="content">
+                        <input type="email" name="email" id="em" placeholder="EMAIL" required>
+                    </div>
+                     <div class="content_1">
+                        <input type="password" name="email" id="em" placeholder="PASSWORD" required>
+                    </div>
+                    <a href="">FORGOT YOUR PASSWORD?</a>
+                    <button type="button" class="three">REGISTER</button>
+                    <button type="submit" class="four">SIGN IN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

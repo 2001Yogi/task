@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            height: 90px;
+            background-color: rgb(52, 50, 50);
+            padding: 25px;
+            display: flex;
+        }
+        .links{
+            margin-left: 40px;
+            color: white;
+        }
+        #serve{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown1{
+            /* display: none; */
+            position: absolute;
+            background-color: gray;
+            min-width: 145px;
+            box-shadow: 0 0 20px rgb(46, 41, 41);
+            z-index: 1;
+        }
+        .dropdown1 a{
+            text-decoration: none;
+            color: white;
+            padding: 8px 10px;
+            display: block;
+        }
+        #serve:hover .dropdown1 {
+            display: block;
+        }
+        .drop{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown2{
+            /* display: none; */
+            position: absolute;
+            left: 145px;
+            top: 110px;
+            background-color: rgb(55, 28, 28);
+            min-width: 145px;
+            box-shadow: 0 0 20px rgb(67, 64, 64);
+            z-index: 2;
+        }
+        .dropdown2 a{
+            text-decoration: none;
+            color: white;
+            padding: 8px 10px;
+            display: block;
+        }
+        .drop:hover .dropdown2{
+            display: block;
+        }
+        .droping{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown3{
+            /* display: none; */
+            position: absolute;
+            left: 145px;
+            top: 125px;
+            background-color: gray;
+            min-width: 145px;
+            box-shadow: 0 0 20px rgb(46, 41, 41);
+            z-index: 3;
+        }
+        .dropdown3 a{
+            text-decoration: none;
+            color: white;
+            padding: 8px 10px;
+            display: block;
+        }
+        .droping:hover .dropdown3{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="links">HOME</div>
+        <div class="links">ABOUT</div>
+        <div class="links" id="serve">SERVICES
+            <div class="dropdown1">
+                <a href="">SERVICE ONE</a>
+                <a href="">SERVICE TWO</a>
+                <a href="">SERVICE THREE</a>
+                <a href="" class="drop">SERVICE FOUR 
+                    <div class="dropdown2">
+                        <a href="">SERVICE ONE</a>
+                        <a href="">SERVICE TWO</a>
+                        <a href="">SERVICE THREE</a>
+                        <a href="" class="droping">SERVICE FOUR
+                            <div class="dropdown3">
+                                <a href="">SERVICE ONE</a>
+                                <a href="">SERVICE TWO</a>
+                                <a href="">SERVICE THREE</a>
+                                <a href="">SERVICE FOUR</a>
+                                <a href="">SERVICE FIVE</a>
+                            </div>
+                        </a>
+                        <a href="">SERVICE FIVE</a>
+                    </div>
+                </a>
+                <a href="">SERVICE FIVE</a>
+            </div>
+        </div>
+        <div class="links">PORTFOLIO</div>
+        <div class="links">CONTACT</div>
+    </div>
+</body>
+</html>

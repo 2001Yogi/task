@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="a()">Click</button>
+    <p id="one"></p>
+    <button onclick="b()">Clickeddd</button>
+    <p id="two"></p>
+    <button onclick="c()">Clicking</button>
+    <script>
+        //alert box
+        function a(){
+            alert("404")
+        }
+        //confirm box
+        var text
+        function b(){
+            if(confirm("Enter your name")){
+                text = "OK"
+            }else{
+                text = "No"
+            }
+            document.getElementById("one").innerHTML = text
+        }
+        //prompt box
+        function c(){
+            var textValue 
+            var person = prompt("please enter your name")
+            if(person == "" || person == null){
+                textValue = "pleae Enter your name"
+            }else{
+                textValue = "Hi " + person + " How are you"
+            }
+            document.getElementById("two").innerHTML = textValue
+        }
+    </script>
+</body>
+</html>

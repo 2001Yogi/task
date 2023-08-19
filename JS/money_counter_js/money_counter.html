@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>2000 X</td>
+            <td><input type="number" name="" id="first" onkeyup="counter()"></td>
+            <td id="one">0</td>
+        </tr>
+        <tr>
+            <td>1000 X</td>
+            <td><input type="number" name="" id="second" onkeyup="counter()"></td>
+            <td id="two">0</td>
+        </tr>
+        <tr>
+            <td>500 X</td>
+            <td><input type="number" name="" id="third" onkeyup="counter()"></td>
+            <td id="three">0</td>
+        </tr>
+        <tr>
+            <td>200 X</td>
+            <td><input type="number" name="" id="fourth" onkeyup="counter()"></td>
+            <td id="four">0</td>
+        </tr>
+        <tr>
+            <td>100 X</td>
+            <td><input type="number" name="" id="fifth" onkeyup="counter()"></td>
+            <td id="five">0</td>
+        </tr>
+        <tr>
+            <td colspan="2">Grand-Total</td>
+            <td id="total">0</td>
+        </tr>
+    </table>
+    <script>
+        function counter() {
+            var num1 = document.getElementById("first").value
+            var result_1 = document.getElementById("one").innerHTML = num1 * 2000
+
+            var num2 = document.getElementById("second").value
+            var result_2 = document.getElementById("two").innerHTML = num2 * 1000
+
+            var num3 = document.getElementById("third").value
+            var result_3 = document.getElementById("three").innerHTML = num3 * 500
+
+            var num4 = document.getElementById("fourth").value
+            var result_4 = document.getElementById("four").innerHTML = num4 * 200
+
+            var num5 = document.getElementById("fifth").value
+            var result_5 = document.getElementById("five").innerHTML = num5 * 100
+            
+            var total_num = document.getElementById("total").innerHTML = result_1 + result_2 + result_3 + result_4 + result_5
+        }
+    </script>
+</body>
+</html>
