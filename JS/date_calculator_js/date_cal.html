@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><label for="">From:</label></td>
+            <td><input type="date" id="date_from"></td>
+        </tr> 
+        <tr>
+            <td><label for="">To:</label></td>
+            <td><input type="date" id="date_to"></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="4"><button onclick="count()">Calculate</button></td>
+        </tr>
+    </table>
+
+    <script>
+        function count(){
+            var dateFrom = document.getElementById("date_from").value
+            var dateTo = document.getElementById("date_to").value
+        }
+    </script>
+</body>
+</html>

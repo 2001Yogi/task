@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English | PRADA</title>
+    <link rel="icon" href="images/icon.jpg" type="image/x-icon">
+    <!-- BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+      *{
+        overflow-x: hidden !important;
+      }
+        nav{
+            margin-top: 1px;
+            border-top: 1px solid rgb(27, 27, 27,0.6);
+            border-bottom: 1px solid rgb(27, 27, 27,0.6);
+            height: 48px;
+            overflow: hidden;
+            position: sticky !important;
+            top: 0px !important;
+            z-index: 2 !important;
+        }
+        .navbar{
+          position: sticky !important;
+          top: 0px !important;
+          z-index: 2 !important;
+        }
+        .navbar-brand{
+          letter-spacing: 4px;
+          font-weight: 900;
+          font-size: 22px;
+          margin-left: 9px;
+        }
+        .nav-link{
+          color: black !important;
+          font-weight: bolder;
+          font-size: 15px;
+        }
+        .video_1{
+          padding: 20px;
+          position: relative;
+          overflow-x: hidden;
+        }
+        .women_bag{
+          position: absolute;
+          top: 80px;
+          color: white;
+          left: 35px;
+          font-size: 24px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        .bag_content{
+          position: absolute;
+          top: 115px;
+          color: white;
+          left: 38px;
+          font-size: 15px;
+          cursor: pointer;
+        }
+        .first_btn{
+          position: absolute;
+          top: 145px;
+          color: white;
+          left: 28px;
+        }
+        .line{
+          position: absolute;
+          color: white;
+          top: 165px;
+          left: 40px;
+          width: 75px;
+          height: 2px;
+          z-index: 1;
+          font-size: larger;
+          font-weight: 800;
+        }
+        .first_btn:hover{
+          color: black;
+          background-color: white;
+        }
+        .bag_image{
+          width: 1550px;
+          /* overflow-x: hidden !important; */
+        }
+        .img_1{
+          margin-left: 20px;
+          width: 465px;
+          height: 550px;
+          overflow-x: hidden;
+        }
+        .img_2{
+          margin-left: 17px;
+          width: 465px;
+          height: 550px;
+        }
+        .img_3{
+          margin-left: -2px;
+          width: 465px;
+          height: 550px;
+        }  
+        .bag_image_1{
+          width: 1550px;
+          overflow-x: hidden !important;
+        }
+        .content_1{
+          margin-left: 20px;
+          width: 475px;
+          height: 100px;
+          /* background-color: aqua; */
+        }
+        .bag_one{  
+          font-size: 28px;
+          font-weight: bolder;
+        }
+        .bag_btn_one{
+          margin-left: -10px;
+        }
+        .bag_hr1{
+          margin-left: 0px;
+          margin-top: -2px;
+          color: black !important;
+          width: 75px;
+          height: 2px !important;
+          font-size: larger;
+          font-weight: bolder;
+        }
+        .content_2{
+          width: 475px; 
+          /* background-color: blue; */
+        }
+        .bag_two{
+          margin-left: 20px;
+          font-size: 28px;
+          font-weight: bolder;
+        }
+        .bag_btn_two{
+          margin-left: 10px;
+        }
+        .bag_hr2{
+          margin-left: 24px;
+          margin-top: -2px;
+          color: black !important;
+          width: 75px;
+          height: 2px !important;
+          font-size: larger;
+          font-weight: bolder;
+        }
+        .content_3{
+          width: 475px;
+          /* background-color: brown; */
+        }
+        .bag_three{
+          margin-left: 25px;
+          width: 475px;
+          font-size: 28px;
+          font-weight: bolder;
+        }
+        .bag_btn_three{
+          margin-left: 15px;
+        }
+        .bag_hr3{
+          margin-left: 40px;
+          margin-top: -2px;
+          color: black !important;
+          width: 75px;
+          height: 2px !important;
+          font-size: larger;
+          font-weight: bolder;
+        }
+        .img_4{
+          margin-top: 20px;
+          margin-left: 17px;
+          width: 725px;
+          height: 870px;
+        }
+        .img_5{
+          margin-top: 20px;
+          margin-left: 17px;
+          width: 725px;
+          height: 870px;
+        }
+        .img_6{
+          margin-top: 20px;
+          margin-left: 17px;
+          width: 1473px;
+          height: 750px;
+        }
+        .img_7{
+          margin-top: 20px;
+          margin-left: 17px;
+          width: 725px;
+          height: 870px;
+        }
+        .img_8{
+          margin-top: 20px;
+          margin-left: 17px;
+          width: 725px;
+          height: 870px;
+        }
+        .img_9{
+          margin-top: 20px;
+          margin-left: 17px;
+          width: 725px;
+          height: 870px;
+        }
+        .img_10{
+          margin-top: 20px;
+          margin-left: 17px;
+          width: 725px;
+          height: 870px;
+        }
+        .video_2{
+          padding: 20px;
+          position: relative;
+          overflow-x: hidden;
+        }
+        .women_bag_{
+          position: absolute;
+          top: 100px;
+          color: white;
+          left: 35px;
+          font-size: 24px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        .first_btn_{
+          position: absolute;
+          top: 145px;
+          color: white;
+          left: 28px;
+        }
+        .line_{
+          position: absolute;
+          color: white;
+          top: 165px;
+          left: 40px;
+          width: 75px;
+          height: 2px;
+          z-index: 1;
+          font-size: larger;
+          font-weight: 800;
+        }
+        .first_btn:hover{
+          color: black;
+          background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- nav section -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">PRADA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav" style="margin-left: 5%;" >
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">WOMEN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">MEN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">BAGS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">GIFTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">LINEA ROSSA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">BEAUTY AND FRAGRANCES</a>
+              </li>
+            </ul>
+            <div class="search_btn" style="margin-left: 45%;">
+              <button class="btn" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- video section -->
+        <video src="https://www.prada.com/content/dam/pradanux/home_page/2023/07/fw23/change_over/woman_bags/loop.mp4/_jcr_content/renditions/cq5dam.video.pradanux-large.1920.1080.mp4" autoplay loop muted style="max-width: 100%;" class="video_1"></video>
+        <div class="women_bag">Women's Bags</div>
+        <div class="bag_content">Archival volumes and sinuous lines inspire the modernist silhouette of the new Prada Arque bag.</div>
+        <button class="btn first_btn">DISCOVER</button>
+        <hr class="line">
+
+        <!-- bag section -->
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <img src="https://www.prada.com/content/dam/pradanux/home_page/2023/07/fw23/change_over/rail_product/ww/001.jpg/_jcr_content/renditions/cq5dam.web.1664.1664.webp" alt="" class="img_1">
+            <div class="content_1">
+              <div class="bag_one">Prada Arque cognac black</div>
+              <div class=" btn bag_btn_one">DISCOVER</div>
+              <hr class="bag_hr1">
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="content_2">
+              <img src="https://www.prada.com/content/dam/pradanux/home_page/2023/07/fw23/change_over/rail_product/ww/002.jpg/_jcr_content/renditions/cq5dam.web.1664.1664.webp" alt="" class="img_2">
+              <div class="bag_two">Prada Arque cognac black</div>
+              <div class=" btn bag_btn_two">DISCOVER</div>
+              <hr class="bag_hr2">
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <img src="https://www.prada.com/content/dam/pradanux/home_page/2023/07/fw23/change_over/rail_product/ww/003.jpg/_jcr_content/renditions/cq5dam.web.1664.1664.webp" alt="" class="img_3">
+            <div class="content_3">
+              <div class="bag_three">Prada Arque cognac black</div>
+              <div class=" btn bag_btn_three">DISCOVER</div>
+              <hr class="bag_hr3">
+            </div>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 bag_image">
+              <img src="https://www.prada.com/content/dam/pradanux/home_page/2023/07/fw23/change_over/mosaic_rtw/Card_1_DT.jpg/_jcr_content/renditions/cq5dam.web.1664.1664.webp" alt="" class="img_4">
+              <img src="https://www.prada.com/content/dam/pradanux/home_page/2023/07/fw23/change_over/mosaic_rtw/Card_2_DT.jpg/_jcr_content/renditions/cq5dam.web.1664.1664.webp" alt="" class="img_5">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 bag_image">
+              <img src="https://www.prada.com/content/dam/pradanux/home_page/2023/07/fw23/change_over/man_bags/banner_DT.jpg/_jcr_content/renditions/cq5dam.web.1664.1664.webp" alt="" class="img_6">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 bag_image">
+              <img src="https://www.prada.com/content/dam/pradanux/home_page/2023/07/fw23/change_over/man_shoes_2/Card_1_DT.jpg/_jcr_content/renditions/cq5dam.web.1664.1664.webp" alt="" class="img_7">
+              <img src="https://www.prada.com/content/dam/pradanux/home_page/2023/07/fw23/change_over/man_shoes_2/Card_2_DT.jpg/_jcr_content/renditions/cq5dam.web.1664.1664.webp" alt="" class="img_8">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 bag_image">
+              <img src="https://www.prada.com/content/dam/pradanux/home_page/2023/07/fw23/change_over/update_shoes/Card_1_DT.jpg/_jcr_content/renditions/cq5dam.web.1664.1664.webp" alt="" class="img_9">
+              <img src="https://www.prada.com/content/dam/pradanux/home_page/2023/07/fw23/change_over/woman_shoes/Card_2_DT.jpg/_jcr_content/renditions/cq5dam.web.1664.1664.webp" alt="" class="img_10">
+            </div>
+          </div>
+
+          <video src="https://www.prada.com/content/dam/pradanux/home_page/2023/07/prada_beauty/loop.mp4/_jcr_content/renditions/cq5dam.video.pradanux-large.1920.1080.mp4" autoplay loop muted style="max-width: 100%;" class="video_2"></video>
+          <div class="women_bag_">Prada Beauty</div>
+          <button class="btn first_btn_">DISCOVER</button>
+          <hr class="line_">
+</body>
+</html>
